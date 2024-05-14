@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Tamanho</title>
+</head>
+<body>
+    <button onclick="alterarTamanho(100)">Pequena</button>
+    <button onclick="alterarTamanho(300)">Média</button>
+    <button onclick="alterarTamanho(500)">Grande</button>
+    <br><br>
+    <img id="imagem" src="imagem.jpg" alt="Imagem">
+
+    <script>
+        function alterarTamanho(tamanho) {
+            document.getElementById("imagem").style.width = tamanho + "px";
+            document.getElementById("imagem").style.height = tamanho + "px";
+        }
+    </script>
+</body>
+</html>

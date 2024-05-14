@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Imagem</title>
+</head>
+<body>
+    <img id="imagem" src="crianca.jpg" alt="Criança">
+    <button onclick="trocarImagem()">Crescer</button>
+
+    <script>
+        function trocarImagem() {
+            document.getElementById("imagem").src = "adulto.jpg";
+            console.log("Imagem trocada com sucesso!");
+        }
+    </script>
+</body>
+</html>

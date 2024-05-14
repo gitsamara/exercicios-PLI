@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cor</title>
+    <style>
+        #paragrafo {
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragrafo" onclick="alterarCor()">Clique aqui para alterar a cor do texto</p>
+
+    <script>
+        function alterarCor() {
+            document.getElementById("paragrafo").style.color = "green";
+        }
+    </script>
+</body>
+</html>

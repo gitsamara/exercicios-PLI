@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniaturas</title>
+</head>
+<body>
+    <img src="imagem1.jpg" alt="Imagem 1" onclick="exibirImagem('imagem1.jpg')">
+    <img src="imagem2.jpg" alt="Imagem 2" onclick="exibirImagem('imagem2.jpg')">
+    <img src="imagem3.jpg" alt="Imagem 3" onclick="exibirImagem('imagem3.jpg')">
+    <div id="imagemGrande"></div>
+
+    <script>
+        function exibirImagem(caminhoImagem) {
+            document.getElementById("imagemGrande").innerHTML = "<img src='" + caminhoImagem + "' alt='Imagem'>";
+        }
+    </script>
+</body>
+</html>
