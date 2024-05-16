@@ -6,12 +6,12 @@
     <title>Trocar Imagem</title>
 </head>
 <body>
-    <img id="imagem" src="crianca.jpg" alt="Criança">
+    <img id="imagem" src="./assets/crianca.jpeg" alt="Criança" width="300" height="375">
     <button onclick="trocarImagem()">Crescer</button>
 
     <script>
         function trocarImagem() {
-            document.getElementById("imagem").src = "adulto.jpg";
+            document.getElementById("imagem").src = "./assets/adulta.jpeg";
             console.log("Imagem trocada com sucesso!");
         }
     </script>

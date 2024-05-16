@@ -6,10 +6,11 @@
     <title>Miniaturas</title>
 </head>
 <body>
-    <img src="imagem1.jpg" alt="Imagem 1" onclick="exibirImagem('imagem1.jpg')">
-    <img src="imagem2.jpg" alt="Imagem 2" onclick="exibirImagem('imagem2.jpg')">
-    <img src="imagem3.jpg" alt="Imagem 3" onclick="exibirImagem('imagem3.jpg')">
-    <div id="imagemGrande"></div>
+    <img src="./assets/lua.jpg" alt="Imagem 1" onclick="exibirImagem('./assets/lua.jpg')" style="width: 100px; height: 100px;">
+    <img src="./assets/coracao.jpg" alt="Imagem 2" onclick="exibirImagem('./assets/coracao.jpg')" style="width: 100px; height: 100px;">
+    <img src="./assets/estrela.jpg" alt="Imagem 3" onclick="exibirImagem('./assets/estrela.jpg')" style="width: 100px; height: 100px;">
+    
+    <div id="imagemGrande" style="width: 300px; height: 300px;"></div>
 
     <script>
         function exibirImagem(caminhoImagem) {
@@ -18,3 +19,10 @@
     </script>
 </body>
 </html>
+
+<style>
+    #imagemGrande img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
